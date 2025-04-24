@@ -8,9 +8,9 @@ ${TextExpected}     smart tivi
 ${product}          xpath=//img[@type='product']
 ${successMes}       Successfully added to cart
 ${btnGoToCart}      class=cart-icon
-${mesCartEmpty}     Không có sản phẩm nào trong giỏ hàng
+${mesCartEmpty}     There are no items in this cart
 *** Test Cases ***
-Search in Home and add to cart
+Search in Home and add to cart then verify cart empty
     Open Web
     Sleep    2
     Search Keyword    ${TextExpected}
@@ -25,3 +25,4 @@ Search in Home and add to cart
     Sleep    2
     Confirm Cart      ${mesCartEmpty}
     Sleep    2
+
