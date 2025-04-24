@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-24T00:22:54.966055" rpa="false" schemaversion="5">
+<suite id="s1" name="Cart" source="D:\Project\robot\demo\TestCase\Cart.robot">
+<test id="s1-t1" name="Mở Trang Chủ" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-24T00:22:55.227376" level="INFO">Opening browser 'Chrome' to base url 'https://www.freshgarden.vn/'.</msg>
+<arg>https://www.freshgarden.vn/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-24T00:22:55.227175" elapsed="2.452926"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-24T00:22:57.680451" elapsed="0.087075"/>
+</kw>
+<status status="PASS" start="2025-04-24T00:22:55.225964" elapsed="2.541978"/>
+</test>
+<status status="PASS" start="2025-04-24T00:22:54.967153" elapsed="2.801493"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Cart" id="s1" pass="1" fail="0" skip="0">Cart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-24T13:33:18.901592" rpa="false" schemaversion="5">
+<suite id="s1" name="Cart" source="D:\Project\robot\demo\TestCase\Cart.robot">
+<kw name="Test-precondition" owner="Common" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:33:19.346939" level="INFO">Pre-condition</msg>
+<arg>Pre-condition</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:33:19.346598" elapsed="0.002372"/>
+</kw>
+<doc>Tiền điều kiện để thực thi test</doc>
+<status status="PASS" start="2025-04-24T13:33:19.345160" elapsed="0.004117"/>
+</kw>
+<test id="s1-t1" name="Search in Home and add to cart" line="13">
+<kw name="Open Web" owner="Common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-24T13:33:19.351107" level="INFO">Opening browser 'chrome' to base url 'https://www.lazada.vn'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-24T13:33:19.350678" elapsed="13.161835"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-24T13:33:32.513119" elapsed="0.050374"/>
+</kw>
+<doc>Open 1 web với địa chỉ cụ thể trên trình duyệt example: open browser Chrome, truy cập tới trang web</doc>
+<status status="PASS" start="2025-04-24T13:33:19.350195" elapsed="13.213571"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-24T13:33:42.565365" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-24T13:33:32.564066" elapsed="10.002009"/>
+</kw>
+<kw name="Search Keyword" owner="Common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-24T13:33:42.569479" level="INFO">Clicking element 'name=q'.</msg>
+<msg time="2025-04-24T13:33:46.028810" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-55.png"&gt;&lt;img src="selenium-screenshot-55.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-24T13:33:46.029580" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="search" id="q" name="q" placeholder="Search in Lazada" class="search-box__input--O34g" tabindex="0" value=""&gt; is not clickable at point (713, 138). Other element would receive the click: &lt;iframe id="baxia-dialog-content" frameborder="none" src="https://acs-m.lazada.vn:443//h5/mtop.relationrecommend.lazadarecommend.recommend/1.0/_____tmd_____/punish?x5secdata=xdc73a07c8c6450c5ba92313b1c500678d09aaaf470702643a1745476409a1984346082a-733026438abaxc3eajrecaptcha__bx__acs-m.lazada.vn%3A443%2Fh5%2Fmtop.relationrecommend.lazadarecommend.recommend%2F1.0&amp;amp;x5step=2&amp;amp;action=captcharecaptcha&amp;amp;pureCaptcha="&gt;&lt;/iframe&gt;
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF607E0EFA5+77893]
+	GetHandleVerifier [0x00007FF607E0F000+77984]
+	(No symbol) [0x00007FF607BD91BA]
+	(No symbol) [0x00007FF607C370A9]
+	(No symbol) [0x00007FF607C34A62]
+	(No symbol) [0x00007FF607C31B01]
+	(No symbol) [0x00007FF607C30A01]
+	(No symbol) [0x00007FF607C22134]
+	(No symbol) [0x00007FF607C5712A]
+	(No symbol) [0x00007FF607C219E6]
+	(No symbol) [0x00007FF607C57340]
+	(No symbol) [0x00007FF607C7F07F]
+	(No symbol) [0x00007FF607C56F03]
+	(No symbol) [0x00007FF607C20328]
+	(No symbol) [0x00007FF607C21093]
+	GetHandleVerifier [0x00007FF6080C7B6D+2931725]
+	GetHandleVerifier [0x00007FF6080C2132+2908626]
+	GetHandleVerifier [0x00007FF6080E00F3+3031443]
+	GetHandleVerifier [0x00007FF607E291EA+184970]
+	GetHandleVerifier [0x00007FF607E3086F+215311]
+	GetHandleVerifier [0x00007FF607E16EC4+110436]
+	GetHandleVerifier [0x00007FF607E17072+110866]
+	GetHandleVerifier [0x00007FF607DFD479+5401]
+	BaseThreadInitThunk [0x00007FFE2852E8D7+23]
+	RtlUserThreadStart [0x00007FFE28EB14FC+44]
+</msg>
+<arg>name=q</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-24T13:33:42.568260" elapsed="3.472761">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="search" id="q" name="q" placeholder="Search in Lazada" class="search-box__input--O34g" tabindex="0" value=""&gt; is not clickable at point (713, 138). Other element would receive the click: &lt;iframe id="baxia-dialog-content" frameborder="none" src="https://acs-m.lazada.vn:443//h5/mtop.relationrecommend.lazadarecommend.recommend/1.0/_____tmd_____/punish?x5secdata=xdc73a07c8c6450c5ba92313b1c500678d09aaaf470702643a1745476409a1984346082a-733026438abaxc3eajrecaptcha__bx__acs-m.lazada.vn%3A443%2Fh5%2Fmtop.relationrecommend.lazadarecommend.recommend%2F1.0&amp;amp;x5step=2&amp;amp;action=captcharecaptcha&amp;amp;pureCaptcha="&gt;&lt;/iframe&gt;
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF607E0EFA5+77893]
+	GetHandleVerifier [0x00007FF607E0F000+77984]
+	(No symbol) [0x00007FF607BD91BA]
+	(No symbol) [0x00007FF607C370A9]
+	(No symbol) [0x00007FF607C34A62]
+	(No symbol) [0x00007FF607C31B01]
+	(No symbol) [0x00007FF607C30A01]
+	(No symbol) [0x00007FF607C22134]
+	(No symbol) [0x00007FF607C5712A]
+	(No symbol) [0x00007FF607C219E6]
+	(No symbol) [0x00007FF607C57340]
+	(No symbol) [0x00007FF607C7F07F]
+	(No symbol) [0x00007FF607C56F03]
+	(No symbol) [0x00007FF607C20328]
+	(No symbol) [0x00007FF607C21093]
+	GetHandleVerifier [0x00007FF6080C7B6D+2931725]
+	GetHandleVerifier [0x00007FF6080C2132+2908626]
+	GetHandleVerifier [0x00007FF6080E00F3+3031443]
+	GetHandleVerifier [0x00007FF607E291EA+184970]
+	GetHandleVerifier [0x00007FF607E3086F+215311]
+	GetHandleVerifier [0x00007FF607E16EC4+110436]
+	GetHandleVerifier [0x00007FF607E17072+110866]
+	GetHandleVerifier [0x00007FF607DFD479+5401]
+	BaseThreadInitThunk [0x00007FFE2852E8D7+23]
+	RtlUserThreadStart [0x00007FFE28EB14FC+44]
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>${keyword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.041919" elapsed="0.000333"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.042683" elapsed="0.000463"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${keyword}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.043649" elapsed="0.000261"/>
+</kw>
+<arg>${TextExpected}</arg>
+<doc>Open web browser to research the object</doc>
+<status status="FAIL" start="2025-04-24T13:33:42.566915" elapsed="3.477474">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="search" id="q" name="q" placeholder="Search in Lazada" class="search-box__input--O34g" tabindex="0" value=""&gt; is not clickable at point (713, 138). Other element would receive the click: &lt;iframe id="baxia-dialog-content" frameborder="none" src="https://acs-m.lazada.vn:443//h5/mtop.relationrecommend.lazadarecommend.recommend/1.0/_____tmd_____/punish?x5secdata=xdc73a07c8c6450c5ba92313b1c500678d09aaaf470702643a1745476409a1984346082a-733026438abaxc3eajrecaptcha__bx__acs-m.lazada.vn%3A443%2Fh5%2Fmtop.relationrecommend.lazadarecommend.recommend%2F1.0&amp;amp;x5step=2&amp;amp;action=captcharecaptcha&amp;amp;pureCaptcha="&gt;&lt;/iframe&gt;
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF607E0EFA5+77893]
+	GetHandleVerifier [0x00007FF607E0F000+77984]
+	(No symbol) [0x00007FF607BD91BA]
+	(No symbol) [0x00007FF607C370A9]
+	(No symbol) [0x00007FF607C34A62]
+	(No symbol) [0x00007FF607C31B01]
+	(No symbol) [0x00007FF607C30A01]
+	(No symbol) [0x00007FF607C22134]
+	(No symbol) [0x00007FF607C5712A]
+	(No symbol) [0x00007FF607C219E6]
+	(No symbol) [0x00007FF607C57340]
+	(No symbol) [0x00007FF607C7F07F]
+	(No symbol) [0x00007FF607C56F03]
+	(No symbol) [0x00007FF607C20328]
+	(No symbol) [0x00007FF607C21093]
+	GetHandleVerifier [0x00007FF6080C7B6D+2931725]
+	GetHandleVerifier [0x00007FF6080C2132+2908626]
+	GetHandleVerifier [0x00007FF6080E00F3+3031443]
+	GetHandleVerifier [0x00007FF607E291EA+184970]
+	GetHandleVerifier [0x00007FF607E3086F+215311]
+	GetHandleVerifier [0x00007FF607E16EC4+110436]
+	GetHandleVerifier [0x00007FF607E17072+110866]
+	GetHandleVerifier [0x00007FF607DFD479+5401]
+	BaseThreadInitThunk [0x00007FFE2852E8D7+23]
+	RtlUserThreadStart [0x00007FFE28EB14FC+44]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.045278" elapsed="0.000378"/>
+</kw>
+<kw name="Find Text" owner="Common">
+<arg>${TextExpected}</arg>
+<doc>Sử dụng keyword page should contain trong thư viện selenium kiểm tra element "text" xuất hiện trên web đang mở</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.046180" elapsed="0.000260"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.046817" elapsed="0.000203"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${product}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.047477" elapsed="0.000294"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.048150" elapsed="0.000224"/>
+</kw>
+<kw name="Add To Cart" owner="Common">
+<arg>${successMes}</arg>
+<doc>Add a product in to cart</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.048807" elapsed="0.000270"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.049418" elapsed="0.000195"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${btnGoToCart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.049993" elapsed="0.000285"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.050749" elapsed="0.000229"/>
+</kw>
+<kw name="Confirm Cart" owner="Common">
+<arg>${mesCartEmpty}</arg>
+<doc>Confirm that there are no products in the cart</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.051478" elapsed="0.000244"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-24T13:33:46.052061" elapsed="0.000190"/>
+</kw>
+<status status="FAIL" start="2025-04-24T13:33:19.349451" elapsed="26.703406">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="search" id="q" name="q" placeholder="Search in Lazada" class="search-box__input--O34g" tabindex="0" value=""&gt; is not clickable at point (713, 138). Other element would receive the click: &lt;iframe id="baxia-dialog-content" frameborder="none" src="https://acs-m.lazada.vn:443//h5/mtop.relationrecommend.lazadarecommend.recommend/1.0/_____tmd_____/punish?x5secdata=xdc73a07c8c6450c5ba92313b1c500678d09aaaf470702643a1745476409a1984346082a-733026438abaxc3eajrecaptcha__bx__acs-m.lazada.vn%3A443%2Fh5%2Fmtop.relationrecommend.lazadarecommend.recommend%2F1.0&amp;amp;x5step=2&amp;amp;action=captcharecaptcha&amp;amp;pureCaptcha="&gt;&lt;/iframe&gt;
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF607E0EFA5+77893]
+	GetHandleVerifier [0x00007FF607E0F000+77984]
+	(No symbol) [0x00007FF607BD91BA]
+	(No symbol) [0x00007FF607C370A9]
+	(No symbol) [0x00007FF607C34A62]
+	(No symbol) [0x00007FF607C31B01]
+	(No symbol) [0x00007FF607C30A01]
+	(No symbol) [0x00007FF607C22134]
+	(No symbol) [0x00007FF607C5712A]
+	(No symbol) [0x00007FF607C219E6]
+	(No symbol) [0x00007FF607C57340]
+	(No symbol) [0x00007FF607C7F07F]
+	(No symbol) [0x00007FF607C56F03]
+	(No symbol) [0x00007FF607C20328]
+	(No symbol) [0x00007FF607C21093]
+	GetHandleVerifier [0x00007FF6080C7B6D+2931725]
+	GetHandleVerifier [0x00007FF6080C2132+2908626]
+	GetHandleVerifier [0x00007FF6080E00F3+3031443]
+	GetHandleVerifier [0x00007FF607E291EA+184970]
+	GetHandleVerifier [0x00007FF607E3086F+215311]
+	GetHandleVerifier [0x00007FF607E16EC4+110436]
+	GetHandleVerifier [0x00007FF607E17072+110866]
+	GetHandleVerifier [0x00007FF607DFD479+5401]
+	BaseThreadInitThunk [0x00007FFE2852E8D7+23]
+	RtlUserThreadStart [0x00007FFE28EB14FC+44]
+</status>
+</test>
+<kw name="Test-postCondition" owner="Common" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:33:46.056791" level="INFO">Post-condition</msg>
+<arg>Post-condition</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:33:46.056250" elapsed="0.000816"/>
+</kw>
+<doc>Trả lại môi trường ban đầu để sẵn sàng cho test case mới</doc>
+<status status="PASS" start="2025-04-24T13:33:46.055404" elapsed="0.001960"/>
+</kw>
+<status status="FAIL" start="2025-04-24T13:33:18.915010" elapsed="27.142569"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Cart" id="s1" pass="0" fail="1" skip="0">Cart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
